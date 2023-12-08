@@ -1,0 +1,18 @@
+const int flameSensorPin = 14; // Sesuaikan pin flame sensor dengan pin yang digunakan pada ESP32
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(flameSensorPin, INPUT);
+}
+
+void loop() {
+  int flameValue = digitalRead(flameSensorPin);
+
+  if (flameValue == HIGH) {
+    Serial.println("FIRE!!!");
+  } else {
+    Serial.println("SAVE");
+  }
+
+  delay(1000); // Beri jeda 1 detik sebelum membaca ulang
+}
