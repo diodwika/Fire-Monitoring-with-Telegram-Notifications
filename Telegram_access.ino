@@ -2,12 +2,12 @@
 #include <HTTPClient.h>
 
 // Define your Telegram bot token and chat ID
-#define TELEGRAM_BOT_TOKEN "6636643821:AAH7bgSxUlo5D-h1l5kRr5R2cwvTHzRgUx8"
-#define TELEGRAM_CHAT_ID "1235344117"
+#define TELEGRAM_BOT_TOKEN "your bot token"
+#define TELEGRAM_CHAT_ID "your telegram ID"
 
 // Define your Wi-Fi credentials
-#define WIFI_SSID "DESI"
-#define WIFI_PASSWORD "gaadapassword"
+#define WIFI_SSID "your ssid"
+#define WIFI_PASSWORD "your password"
 
 // Function to send a message to Telegram using HTTP requests
 void sendTelegramNotification(String message) {
@@ -50,7 +50,7 @@ void loop() {
   // Your main code goes here, you can add additional functionality if needed
 
   // Example: Send a Telegram notification with the message "anjaaayyy"
-  sendTelegramNotification("ANJJJJJJIIIIIIIIII!!!!!!!!");
+  sendTelegramNotification("ANJAYYY!!!");
 
   // Delay for a while before sending another message (adjust as needed)
   delay(1000);
